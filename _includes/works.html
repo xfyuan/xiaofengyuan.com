@@ -51,36 +51,3 @@
     </div>
   </div>
 </section>
-
-<style>
-  /* 现代感悬停效果 */
-  .work-card {
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border-radius: 8px !important; /* 稍微增加圆角显得更现代 */
-  }
-  .work-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important;
-  }
-
-  /* 分类标签样式 - 适配 Parsa 风格 */
-  .work-category {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: #ffec3d; /* Parsa 经典黄 */
-    color: #000;
-    padding: 3px 12px;
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
-  }
-
-  .italic { font-style: italic; color: #666; }
-
-  /* 确保卡片高度统一，即使文字长度不同 */
-  .card-body { display: flex; flex-direction: column; }
-  .flex-grow-1 { flex-grow: 1; }
-</style>
