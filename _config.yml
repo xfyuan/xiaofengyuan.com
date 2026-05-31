@@ -97,7 +97,7 @@ permalink: pretty
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  # - jekyll/tagging
+  - jekyll-feed
   - jekyll-archives
 
 paginate: 3
@@ -120,7 +120,8 @@ tag_permalink_style: pretty
 
 # categories
 jekyll-archives:
-  enabled: all
+  enabled:
+    - categories
   layout: categories
   permalinks:
     category: "/category/:name/"
