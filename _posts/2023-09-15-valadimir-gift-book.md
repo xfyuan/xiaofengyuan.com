@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vladimir的赠书
+title: Vladimir Dementyev 的赠书
 date: 2023-09-15
 image: "assets/images/masonary-post/img002.jpg"
 categories:

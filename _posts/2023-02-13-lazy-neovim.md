@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 懒惰的Neovim
+title: 懒惰的 Neovim
 date: 2023-02-13
 image: "assets/images/masonary-post/img003.jpg"
 categories:
