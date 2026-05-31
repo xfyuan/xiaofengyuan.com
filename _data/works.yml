@@ -3,7 +3,7 @@
   category: "RubyChina Conf"
   image: "assets/images/works/rubychina2023.jpg" # 可以先借用模板自带图
   link: "https://www.youtube.com/@ruby-china/search?query=%E8%A2%81%E6%99%93%E5%B3%B0"
-  description: "这是一个为期三个月的重构项目，旨在提升用户的留存率。"
+  description: "RubyChina Conf 2023~2025 三个不同主题讲师"
   # testimonials:
   #   - content: "非常有灵性的设计，对细节的把控超出了我们的预期。"
   #     author: "张总"
@@ -13,17 +13,18 @@
   category: "Book"
   image: "assets/images/works/book.png"
   link: "#"
-  description: "为新兴咖啡品牌打造的完整视觉体系。"
-  # testimonials:
-  #   - content: "色彩运用非常大胆且符合品牌调性。"
-  #     author: "李经理"
-  #     position: "品牌总监"
+  description: ""
+  testimonials:
+    - content: "这是一本难得的 Rails 全栈实践指南。"
+      author: "Rei"
+    - content: "它不只是 Rails 8 的技术实践，更是如何在一个日益复杂的技术环境中，重新找回简单、连贯和高效的开发方式。"
+      author: "毛超"
 
 - title: "GitHub 项目"
   category: "GitHub Repos"
   image: "assets/images/works/github.png"
   link: "https://github.com/xfyuan"
-  description: "采用 Jekyll + Cloudflare 构建的高性能响应式网站。"
+  description: "Test-prof 官方中文文档维护，Vim/Neovim 插件开发"
   # testimonials:
   #   - content: "访问速度极快，代码结构非常干净。"
   #     author: "王工"
