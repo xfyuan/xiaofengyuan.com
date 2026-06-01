@@ -1,7 +1,7 @@
 # _data/works.yml
 - title: "RubyChina 大会讲演"
   category: "RubyChina Conf"
-  image: "assets/images/works/rubychina2023.jpg" # 可以先借用模板自带图
+  image: "assets/images/works/rubychina2023.png" # 可以先借用模板自带图
   link: "https://www.youtube.com/@ruby-china/search?query=%E8%A2%81%E6%99%93%E5%B3%B0"
   description: "RubyChina Conf 2023~2025 三个不同主题讲师"
   # testimonials:
