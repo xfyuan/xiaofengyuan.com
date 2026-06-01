@@ -3,7 +3,7 @@ layout: post
 title: TestProf 文档中文版翻译完成上线
 date: 2020-08-18
 categories: [ Translation, Programming ]
-image: "assets/images/masonary-post/img005.jpg"
+image: "assets/images/masonary-post/img006.jpg"
 categories:
   - "Ruby"
   - "Testing"
