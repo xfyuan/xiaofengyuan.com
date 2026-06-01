@@ -56,7 +56,7 @@ contact:
   email: support@xiaofengyuan.com
   phone: +86 199-1213-8888
   address:
-    city: Chengdu
+    city: "Chengdu, Sichuan"
     street: Tianfu Square Building 1024 Unit 256
 
 # Contact Form
@@ -64,10 +64,10 @@ contact-form: example@email.com
 
 # Social links
 social:
-  - { icon: "ti-twitter-alt", link: "#apexy" }
-  - { icon: "ti-github", link: "#xfyuan" }
-  - { icon: "ti-facebook", link: "#" }
-  - { icon: "ti-linkedin", link: "#" }
+  - { icon: "ti-github", link: "https://github.com/xfyuan" }
+  - { icon: "ti-twitter-alt", link: "https://x.com/apexy" }
+  - { icon: "ti-facebook", link: "https://www.facebook.com/apexy2007" }
+  # - { icon: "ti-linkedin", link: "#" }
 
 #-------------------------------
 # Comment Section (Disqus)
