@@ -5,8 +5,6 @@ date: 2020-08-18
 categories: [ Translation, Programming ]
 image: "assets/images/masonary-post/img005.jpg"
 categories:
-  - "Book"
-  - "Programming"
   - "Ruby"
   - "Testing"
 ---
