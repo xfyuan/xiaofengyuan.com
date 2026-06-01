@@ -1,5 +1,6 @@
 <header class="navigation">
   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
     {% if site.logo %}
     <a class="navbar-brand" href="{{site.baseurl | absolute_url}}"><img class="img-fluid" src="{{site.logo | relative_url}}" alt="{{site.title}}"></a>
     {% endif %}
@@ -34,6 +35,7 @@
         <input class="form-control px-0 w-100" type="search" id="search-box" name="query" placeholder="Search">
         <button class="search-icon" type="submit"><i class="ti-search text-dark"></i></button>
       </form>
+    </div>
     </div>
   </nav>
 </header>
