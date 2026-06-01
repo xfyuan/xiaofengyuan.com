@@ -851,6 +851,9 @@ blockquote {
 
 /*# sourceMappingURL=maps/style.css.map */
 
+/*------------------------------------------------------------------
+[Portfolio]
+-------------------------------------------------------------------*/
 /* 现代感悬停效果 */
 .work-card {
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -881,3 +884,96 @@ blockquote {
 /* 确保卡片高度统一，即使文字长度不同 */
 .card-body { display: flex; flex-direction: column; }
 .flex-grow-1 { flex-grow: 1; }
+
+/*------------------------------------------------------------------
+[Categories]
+-------------------------------------------------------------------*/
+/* 页面大标题：深沉、稳重 */
+.category-display-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  letter-spacing: -1.5px;
+}
+.category-description {
+  color: #666;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+/* 去除 A 标签默认样式 */
+.category-card-wrapper:hover {
+  text-decoration: none;
+}
+
+/* 核心卡片样式：采用 Parsa 标志性的淡黄橙色 */
+.parsa-theme-card {
+  background: #fdf9f0; /* Parsa Hero/Footer 同款淡色 */
+  padding: 40px 30px;
+  border-radius: 0; /* 保持 Parsa 经典方正风格，或者给 2px 极微圆角 */
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.4s ease;
+  border: 1px solid transparent;
+}
+
+/* 悬停状态：颜色加深一点点，并产生位移 */
+.parsa-theme-card:hover {
+  background: #f8f1e5; /* 稍微加深一点的橙黄 */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* 左侧字母 Logo */
+.card-letter {
+  font-size: 40px;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-right: 25px;
+  font-family: serif; /* 使用衬线体增加高级感 */
+  line-height: 1;
+  opacity: 0.8;
+}
+
+/* 分类文字：纯黑 */
+.card-info .name {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.card-info .count {
+  color: #555;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* 右侧动作图标 */
+.card-action {
+  position: absolute;
+  right: 30px;
+  font-size: 18px;
+  color: #000;
+  opacity: 0.2;
+  transition: all 0.3s ease;
+}
+
+.parsa-theme-card:hover .card-action {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+/* 适配移动端 */
+@media (max-width: 768px) {
+  .category-display-title {
+    font-size: 2.5rem;
+  }
+  .parsa-theme-card {
+    padding: 30px 20px;
+  }
+}
