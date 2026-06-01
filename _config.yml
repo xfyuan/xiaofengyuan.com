@@ -122,7 +122,7 @@ tag_permalink_style: pretty
 jekyll-archives:
   enabled:
     - categories
-  layout: categories
+  layout: category
   permalinks:
     category: "/category/:name/"
 
