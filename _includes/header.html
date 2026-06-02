@@ -1,3 +1,11 @@
+<script>
+  // 放在 head 里，只负责改颜色，不涉及图标（因为图标 HTML 还没加载）
+  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
 <!-- defer loading of font and font awesome -->
 <noscript id="deferred-styles">
           <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
@@ -43,7 +51,7 @@
       <div class="dark-mode-switch ml-3">
         <button id="theme-toggle" style="background: none; border: none; cursor: pointer; font-size: 20px;">
           <span id="theme-toggle-dark-icon" style="display: none;">🌙</span>
-          <span id="theme-toggle-light-icon" style="display: none;">☀️</span>
+          <span id="theme-toggle-light-icon">☀️</span>
         </button>
       </div>
 

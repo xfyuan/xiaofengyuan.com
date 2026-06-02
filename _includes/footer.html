@@ -43,36 +43,30 @@
 
 <script>
   const themeToggleBtn = document.getElementById('theme-toggle');
-  const darkIcon = document.getElementById('theme-toggle-dark-icon'); // 月亮 🌙
-  const lightIcon = document.getElementById('theme-toggle-light-icon'); // 太阳 ☀️
+  const darkIcon = document.getElementById('theme-toggle-dark-icon');
+  const lightIcon = document.getElementById('theme-toggle-light-icon');
 
-  // 1. 初始化检查
-  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    // 【进入暗色模式】
-    document.documentElement.setAttribute('data-theme', 'dark');
-    darkIcon.style.display = 'inline-block'; // 展示月亮
-    lightIcon.style.display = 'none';         // 隐藏太阳
+  // 1. 初始化图标展示 (此时 head 已经设好了 data-theme)
+  if (document.documentElement.getAttribute('data-theme') === 'dark') {
+    darkIcon.style.display = 'inline-block';
+    lightIcon.style.display = 'none';
   } else {
-    // 【进入浅色模式】
-    document.documentElement.setAttribute('data-theme', 'light');
-    darkIcon.style.display = 'none';          // 隐藏月亮
-    lightIcon.style.display = 'inline-block';  // 展示太阳
+    darkIcon.style.display = 'none';
+    lightIcon.style.display = 'inline-block';
   }
 
-  // 2. 点击切换逻辑
+  // 2. 点击切换逻辑 (保持不变)
   themeToggleBtn.addEventListener('click', function() {
     if (document.documentElement.getAttribute('data-theme') === 'dark') {
-      // 当前是暗色 -> 切换到浅色
       document.documentElement.setAttribute('data-theme', 'light');
       localStorage.setItem('color-theme', 'light');
-      darkIcon.style.display = 'none';          // 隐藏月亮
-      lightIcon.style.display = 'inline-block';  // 展示太阳
+      darkIcon.style.display = 'none';
+      lightIcon.style.display = 'inline-block';
     } else {
-      // 当前是浅色 -> 切换到暗色
       document.documentElement.setAttribute('data-theme', 'dark');
       localStorage.setItem('color-theme', 'dark');
-      darkIcon.style.display = 'inline-block'; // 展示月亮
-      lightIcon.style.display = 'none';         // 隐藏太阳
+      darkIcon.style.display = 'inline-block';
+      lightIcon.style.display = 'none';
     }
   });
 </script>
