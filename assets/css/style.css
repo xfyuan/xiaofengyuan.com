@@ -1066,4 +1066,15 @@ blockquote {
 .form-control {
   background-color: var(--section-bg) !important;
 }
+
+/* 当处于暗色模式时，调整移动端菜单按钮 */
+[data-theme='dark'] .navbar-toggler {
+    /* 调整按钮边框颜色，使其在深色背景下可见 */
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+[data-theme='dark'] .navbar-toggler-icon {
+    /* 核心代码：使用滤镜将黑色 SVG 图标反转为白色 (或者说浅灰色) */
+    filter: invert(1) brightness(1.5);
+}
 /* ------------------------------------------------------------------ */
