@@ -100,6 +100,7 @@ permalink: pretty
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-archives
 
