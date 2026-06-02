@@ -23,6 +23,8 @@ menu:
     url: /categories/
   - name: Blog
     url: https://blog.xiaofengyuan.com
+  - name: Feed
+    url: /feed.xml
 
 # *** NOTE ***
 # You can add submenus. For example:
