@@ -25,8 +25,7 @@ VERSION:	Versoin Number
   --card-bg: #ffffff;
   --border-color: #eceef0;
   --nav-bg: #ffffff;
-  --hero-top-color: #ffffff;
-  --hero-bottom-color: #fdefe6; /* 你的 Hero 浅橙色 */
+  --hero-color: #fdefe6; /* 你的 Hero 浅橙色 */
 }
 
 /* 2. 定义暗色模式颜色 */
@@ -38,8 +37,7 @@ VERSION:	Versoin Number
   --card-bg: #252526;      /* 卡片深灰色 */
   --border-color: #333333;
   --nav-bg: #121212;
-  --hero-top-color: #121212;    /* 暗色模式顶部：深黑 */
-  --hero-bottom-color: #2a2622; /* 暗色模式底部：深灰 */
+  --hero-color: #2a2622; /* 暗色模式底部：深灰 */
 }
 
 body {
@@ -366,7 +364,8 @@ a:hover, a.text-dark:hover {
 }
 
 .bg-secondary {
-  background: #fdefe6 !important;
+  /* background: #fdefe6 !important; */
+  background: var(--hero-color) !important;
 }
 
 .text-primary {
@@ -701,7 +700,7 @@ textarea.form-control {
 .hero-section {
   padding: 70px 0 0;
   /* background-image: linear-gradient(#fff 45%, #fdefe6 0); */
-  background-image: linear-gradient(var(--hero-top-color) 45%, var(--hero-bottom-color) 0);
+  background-image: linear-gradient(var(--bg-color) 45%, var(--hero-color) 0);
 }
 
 .dividers {
@@ -845,7 +844,7 @@ blockquote {
   /* color: #000000; */
   /* background: #fdefe6; */
   color: var(--text-color);
-  background: var(--section-bg);
+  background: var(--hero-color);
   padding: 20px;
   font-weight: 600;
 }
@@ -1033,7 +1032,7 @@ blockquote {
 /*------------------------------------------------------------------
 [DARK MODE]
 -------------------------------------------------------------------*/
-.section, footer.bg-secondary {
+.section {
   background-color: var(--section-bg) !important;
 }
 
