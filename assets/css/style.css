@@ -896,6 +896,25 @@ blockquote {
 .site-name{
     font-family: 'ZCOOL QingKe HuangYou';
 }
+
+/* 给外部链接后面加一个微小的右上角箭头图标 */
+.external-link::after {
+  content: "\e65a"; /* Themify Icons 中的右上角箭头 */
+  font-family: 'themify';
+  font-size: 10px;
+  margin-left: 4px;
+  vertical-align: super;
+  display: inline-block; /* 确保旋转或位移生效 */
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+/* 悬停时的小动画：让图标稍微往右上方跳动一下，增加灵动感 */
+.external-link:hover::after {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
 /*------------------------------------------------------------------
 [Portfolio]
 -------------------------------------------------------------------*/
