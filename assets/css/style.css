@@ -897,6 +897,17 @@ blockquote {
     font-family: 'ZCOOL QingKe HuangYou';
 }
 
+.prev-next {
+  border-top: 1px solid var(--border-color);
+
+  a {
+    color: var(--text-muted) !important;
+  }
+  a:hover {
+    color: #ff6f00 !important;
+  }
+}
+
 /* 给外部链接后面加一个微小的右上角箭头图标 */
 .external-link::after {
   content: "\e65a"; /* Themify Icons 中的右上角箭头 */
