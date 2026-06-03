@@ -908,6 +908,12 @@ blockquote {
   }
 }
 
+.post-image img {
+  filter: url(#ragged-edge);
+  /* 配合渐变蒙版效果更佳 */
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
 /* 给外部链接后面加一个微小的右上角箭头图标 */
 .external-link::after {
   content: "\e65a"; /* Themify Icons 中的右上角箭头 */
