@@ -14,6 +14,8 @@ _本文已获得原作者（**Nina Torgunakova**、**Travis Turner**）和 Evil 
 - 作者：Nina Torgunakova、**Travis Turner**
 - 站点：Evil Martians ——位于纽约和俄罗斯的 Ruby on Rails 开发者博客。 它发布了许多优秀的文章，并且是不少 gem 的赞助商。
 
+<!--more-->
+
 _【正文如下】_
 
 ## 引言

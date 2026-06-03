@@ -11,6 +11,8 @@ categories:
 
 我最近接触到了一个超大的 Rails 项目，其目录下包含的文件数量达到了 10 万的级别。当我用 Neovim 打开它开始工作的时候，无论是搜索文件进行切换，还是在项目内 Grep 查找文本，都明显感觉到了响应速度的迟缓，达到了 3 ～ 4 秒的延迟。要知道，这些操作是开发时会频繁进行的操作，一天估计怎么也要数百次，要每次都是这种迟钝的顿挫感，那对工作影响是极大的拖累，已经到了必须要解决的地步。
 
+<!--more-->
+
 而故事就从最近刚刚出现的一个 Neovim 插件（Plugin）—— [lazy.nvim](https://github.com/folke/lazy.nvim) 说起。lazy.nvim 的作者是 [folke](https://github.com/folke)。这可是 Neovim Plugin 社区一个著名的作者，
 
 ![folke](https://avatars.githubusercontent.com/u/292349?v=4)

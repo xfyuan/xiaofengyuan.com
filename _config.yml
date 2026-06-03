@@ -65,6 +65,8 @@ contact:
 # Contact Form
 contact-form: example@email.com
 
+excerpt_separator: "<!--more-->"
+
 # Social links
 social:
   - { icon: "ti-github", link: "https://github.com/xfyuan" }
