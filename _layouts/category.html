@@ -21,7 +21,7 @@ layout: default
         <div class="row masonry-container pt-5">
           {% for post in page.posts %}
           <div class="col-sm-6 mb-5">
-            <article class="text-center">
+            <article class="post-image text-center">
               <img class="img-fluid mb-4" src="{{post.image | relative_url }}" alt="{{post.title}}">
               {% for category in post.categories %}
               <a class="d-block mb-3 text-dark text-uppercase" href="{{ 'category/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
