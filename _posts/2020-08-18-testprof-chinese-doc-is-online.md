@@ -33,4 +33,4 @@ Vladimir 也在 Twitter 上发布了中文版文档上线的消息:)
 
 ##### 附注
 
-TestProf 中文文档的 GitHub 地址是：[https://github.com/test-prof/docs-zh-cn](https://github.com/test-prof/docs-zh-cn)， 欢迎各位小伙伴针对文档中翻译不准确甚至有误的地方提 issue 给予反馈。
+TestProf 中文文档的 GitHub 地址是：[https://github.com/test-prof/docs-zh-cn](https://github.com/test-prof/docs-zh-cn)，欢迎各位小伙伴针对文档中翻译不准确甚至有误的地方提 issue 给予反馈。

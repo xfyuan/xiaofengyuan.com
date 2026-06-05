@@ -12,7 +12,7 @@ _本文已获得原作者（**Nina Torgunakova**、**Travis Turner**）和 Evil 
 
 - 原文链接：[Why should developers write? 3 reasons and 3 common blocks](https://evilmartians.com/chronicles/why-should-developers-write-3-reasons-and-3-common-blocks)
 - 作者：Nina Torgunakova、**Travis Turner**
-- 站点：Evil Martians ——位于纽约和俄罗斯的 Ruby on Rails 开发者博客。 它发布了许多优秀的文章，并且是不少 gem 的赞助商。
+- 站点：Evil Martians ——位于纽约和俄罗斯的 Ruby on Rails 开发者博客。它发布了许多优秀的文章，并且是不少 gem 的赞助商。
 
 <!--more-->
 
@@ -98,7 +98,7 @@ _【正文如下】_
 
 另一半是完成你的第一篇文章，所以接下来，让我们看看对于这个领域有抱负的作者经常面临的一些常见障碍，以及如何解决它们。
 
-## 障碍一：我不知道该写什么！
+## 障碍一：我不知道该写什么
 
 找到一个要写的主题通常是我们面临的最困难的挑战，而这个问题通常在这个过程的一开始就会给我们以迎头痛击。
 
@@ -114,7 +114,7 @@ _【正文如下】_
 
 事实上，这种体验可以成为新文章的良好起点！你可以描述这个克服障碍并找到最终解决方案的旅程。
 
-你也可以写下你用来解决特定问题的技术和工具（只要确保你没有违反任何NDA规则）。
+你也可以写下你用来解决特定问题的技术和工具（只要确保你没有违反任何 NDA 规则）。
 
 **一个主题是否被涵盖并不一定重要，因为你的经验没有在内。实践和经验通常与文档一样有价值（甚至更有价值）。**
 

@@ -1,16 +1,16 @@
 ---
-#-------------------------------
+
 # General Site Settings
-baseurl: "" # The subpath of your site, e.g. /blog
-url: "" # The base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""  # The subpath of your site, e.g. /blog
+url: ""  # The base hostname & protocol for your site, e.g. http://example.com
 
 name: Xiaofeng Yuan | 袁晓峰
 title: Xiaofeng Yuan | 袁晓峰 Site
-logo: /assets/images/logo.png # You can add own logo
-description: # Add your awesome description
+logo: /assets/images/logo.png  # You can add own logo
+description:  # Add your awesome description
 copyright: Copyright 2026 Developed by [Xiaofeng Yuan](https://www.xiaofengyuan.com)
 # Preloader
-preloader: true # To disable preloader change value to false
+preloader: true  # To disable preloader change value to false
 
 menu:
   - name: Home
@@ -37,23 +37,20 @@ menu:
 #       url: /peru/
 # ----------------------------------
 
-layout_home_page: false # Homepage layout ( two layout is available, you can set the another layout by change the value of layout_home_page "true" to "false")
+layout_home_page: false  # Homepage layout ( two layout is available, you can set the another layout by change the value of layout_home_page "true" to "false")
 
-featured-post-slider: false # You can enable or disable the featured-post-slider using true or false values.
+featured-post-slider: false  # You can enable or disable the featured-post-slider using true or false values.
 
-#-------------------------------
 # Hero Section
 hero:
   # hero-subtitle: I’m a Freelance Interactive Art Director based in France. Focusing across branding and identity, digital and print.
   hero-subtitle: A lifetime lasts less than a hundred years, Yet we weigh our hearts with a thousand years of cares. Since days are short and bitter nights are long, Why not take up a candle and wander along?
-  hero-banner: /assets/images/banner-img.png # Add your banner image '/assets/images/'
+  hero-banner: /assets/images/banner-img.png  # Add your banner image '/assets/images/'
 
-#-------------------------------
 # Author Settings
 author:
   name: Xiaofeng Yuan
 
-#-------------------------------
 # Contact Info
 contact:
   email: support@xiaofengyuan.com
@@ -69,26 +66,22 @@ excerpt_separator: "<!--more-->"
 
 # Social links
 social:
-  - { icon: "ti-github", link: "https://github.com/xfyuan" }
-  - { icon: "ti-twitter-alt", link: "https://x.com/apexy" }
-  - { icon: "ti-facebook", link: "https://www.facebook.com/apexy2007" }
-  # - { icon: "ti-linkedin", link: "#" }
+  - {icon: "ti-github", link: "https://github.com/xfyuan"}
+  - {icon: "ti-twitter-alt", link: "https://x.com/apexy"}
+  - {icon: "ti-facebook", link: "https://www.facebook.com/apexy2007"}
+  # - {icon: "ti-linkedin", link: "#"}
 
-#-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier:  # Add your shortname for Disqus Comment. For example mr-brown
 
-#-------------------------------
 # Instagram Feed
-instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
+instafeed: false  # To enable the instafeed, use the value true. To turn off use the value false.
 # userID: 4044026246
 # accessToken: 4044026246.1677ed0.8896752506ed4402a0519d23b8f50a17
 
-#-------------------------------
 # Google Analytics
-google-analytics: # Add your identifier. For example UA-99631805-1.
+google-analytics:  # Add your identifier. For example UA-99631805-1.
 
-#-------------------------------
 # Build settings
 markdown: kramdown
 kramdown:
