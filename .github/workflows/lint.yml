@@ -1,0 +1,29 @@
+name: Lint
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Tools
+        run: |
+          pip install yamllint
+          npm install -g markdownlint-cli2
+          curl -sL https://github.com/huacnlee/autocorrect/releases/download/v2.16.3/autocorrect-linux-amd64.tar.gz | sudo tar xz -C /usr/local/bin
+      - name: Run Lint via Makefile
+        # 使用 -k (keep-going) 确保即使某一项失败，也会跑完所有检查以便查看所有报错
+        run: make -k lint
