@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <section class="section">
   <div class="container">
     <!-- 标题部分 -->
@@ -17,25 +16,25 @@ layout: default
     <div class="row justify-content-center">
       {% assign sorted_categories = site.categories | sort %}
       {% for category in sorted_categories %}
-      {% capture category_name %}{{ category | first }}{% endcapture %}
-      {% assign posts = category | last %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        {% assign posts = category | last %}
 
-      <div class="col-lg-4 col-md-6 mb-4">
-        <a href="{{ '/category/' | relative_url }}{{ category_name | slugify }}/" class="category-card-wrapper">
-          <div class="category-card">
-            <div class="card-letter">
-              {{ category_name | slice: 0 | upcase }}
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="{{ '/category/' | relative_url }}{{ category_name | slugify }}/" class="category-card-wrapper">
+            <div class="category-card">
+              <div class="card-letter">
+                {{ category_name | slice: 0 | upcase }}
+              </div>
+              <div class="card-info">
+                <h3 class="name">{{ category_name }}</h3>
+                <span class="count">{{ posts.size }} 篇文章</span>
+              </div>
+              <div class="card-action">
+                <i class="ti-arrow-right"></i>
+              </div>
             </div>
-            <div class="card-info">
-              <h3 class="name">{{ category_name }}</h3>
-              <span class="count">{{ posts.size }} 篇文章</span>
-            </div>
-            <div class="card-action">
-              <i class="ti-arrow-right"></i>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
       {% endfor %}
     </div>
   </div>

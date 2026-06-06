@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <section class="section bg-secondary">
   <div class="container">
     <div class="row">
@@ -20,17 +19,19 @@ layout: default
       <div class="col-lg-8">
         <div class="row masonry-container pt-5">
           {% for post in page.posts %}
-          <div class="col-sm-6 mb-5">
-            <article class="post-image text-center">
-              <img class="img-fluid mb-4" src="{{post.image | relative_url }}" alt="{{post.title}}">
-              {% for category in post.categories %}
-              <a class="d-block mb-3 text-dark text-uppercase" href="{{ 'category/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
-              {% endfor %}
-              <h4 class="title-border"><a class="text-dark" href="{{ post.url | relative_url }}">{{post.title}}</a></h4>
-              <div class="mb-0 post-summary">{{ post.excerpt }}</div>
-              <a href="{{ post.url | relative_url }}" class="btn btn-transparent">read more</a>
-            </article>
-          </div>
+            <div class="col-sm-6 mb-5">
+              <article class="post-image text-center">
+                <img class="img-fluid mb-4" src="{{post.image | relative_url }}" alt="{{post.title}}">
+                {% for category in post.categories %}
+                  <a class="d-block mb-3 text-dark text-uppercase" href="{{ 'category/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
+                {% endfor %}
+                <h4 class="title-border">
+                  <a class="text-dark" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </h4>
+                <div class="mb-0 post-summary">{{ post.excerpt }}</div>
+                <a href="{{ post.url | relative_url }}" class="btn btn-transparent">read more</a>
+              </article>
+            </div>
           {% endfor %}
         </div>
       </div>
