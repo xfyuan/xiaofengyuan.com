@@ -46,27 +46,30 @@
   const darkIcon = document.getElementById('theme-toggle-dark-icon');
   const lightIcon = document.getElementById('theme-toggle-light-icon');
 
-  // 1. 初始化图标展示 (此时 head 已经设好了 data-theme)
-  if (document.documentElement.getAttribute('data-theme') === 'dark') {
-    darkIcon.style.display = 'inline-block';
-    lightIcon.style.display = 'none';
-  } else {
-    darkIcon.style.display = 'none';
-    lightIcon.style.display = 'inline-block';
+  function updateIcons() {
+    if (document.documentElement.getAttribute('data-theme') === 'dark') {
+      // 如果当前是黑夜，展示“太阳”让用户可以切回白天
+      darkIcon.style.display = 'none';
+      lightIcon.style.display = 'inline-block';
+    } else {
+      // 如果当前是白天，展示“月亮”让用户可以切到黑夜
+      darkIcon.style.display = 'inline-block';
+      lightIcon.style.display = 'none';
+    }
   }
 
-  // 2. 点击切换逻辑 (保持不变)
+  // 1. 初始化
+  updateIcons();
+
+  // 2. 点击逻辑
   themeToggleBtn.addEventListener('click', function() {
     if (document.documentElement.getAttribute('data-theme') === 'dark') {
       document.documentElement.setAttribute('data-theme', 'light');
       localStorage.setItem('color-theme', 'light');
-      darkIcon.style.display = 'none';
-      lightIcon.style.display = 'inline-block';
     } else {
       document.documentElement.setAttribute('data-theme', 'dark');
       localStorage.setItem('color-theme', 'dark');
-      darkIcon.style.display = 'inline-block';
-      lightIcon.style.display = 'none';
     }
+    updateIcons(); // 切换后更新图标
   });
 </script>
