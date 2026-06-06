@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "lint:ac": "autocorrect --lint",
+    "lint:md": "markdownlint-cli2 'README.md' '_pages/*.md' '_posts/*.md'",
+    "lint:yaml": "yamllint .",
+    "lint:html": "prettier --check '**/*.html'",
+    "fix:ac": "autocorrect --fix",
+    "fix:md": "markdownlint-cli2 --fix 'README.md' '_pages/*.md' '_posts/*.md'",
+    "fix:html": "prettier --write '**/*.html'",
+    "lint": "npm-run-all lint:**",
+    "fix": "npm-run-all fix:**"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.10.2",
+    "markdownlint-cli2": "^0.22.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.8.3"
+  }
+}
