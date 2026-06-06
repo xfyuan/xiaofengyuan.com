@@ -1,3 +1,5 @@
+[![Lint](https://github.com/xfyuan/xiaofengyuan.com/actions/workflows/lint.yml/badge.svg)](https://github.com/xfyuan/xiaofengyuan.com/actions/workflows/lint.yml)
+
 # Personal Site
 
 My xiaofengyuan.com site based on Jekyll.
