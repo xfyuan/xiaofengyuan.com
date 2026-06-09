@@ -9,10 +9,10 @@
   #     author: "张总"
   #     position: "某科技公司 CEO"
 
-- title: "个人书籍"
+- title: "个人在售书籍"
   category: "Book"
   image: "assets/images/works/book.png"
-  link: "#"
+  link: "https://leanpub.com/therails8modernmonolithinaction"
   description: ""
   testimonials:
     - content: "这是一本难得的 Rails 全栈实践指南。"
