@@ -11,16 +11,16 @@ My xiaofengyuan.com site based on Jekyll.
 bundle install
 
 # Lint setup
-yarn
 brew install yamllint autocorrect
+npm install -g markdownlint-cli2
 ```
 
 ## Lint
 
 ```bash
 # Lint all
-yarn lint
+make lint
 
 # Fix lint issues
-yarn fix
+make fix
 ```

@@ -19,12 +19,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: yarn
-      - name: Install yarn packages
-        run: npx --yes ci
       - name: Install Tools
         run: |
           pip install yamllint
+          npm install -g markdownlint-cli2
           curl -sL https://github.com/huacnlee/autocorrect/releases/download/v2.16.3/autocorrect-linux-amd64.tar.gz | sudo tar xz -C /usr/local/bin
       - name: Run Lint
-        run: yarn lint
+        # 使用 -k (keep-going) 确保即使某一项失败，也会跑完所有检查以便查看所有报错
+        run: make -k lint
