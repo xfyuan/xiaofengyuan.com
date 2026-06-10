@@ -960,8 +960,8 @@ blockquote {
   position: absolute;
   top: 15px;
   left: 15px;
-  /* background: #ffec3d; */
-  /* color: #000; */
+  background: #ffec3d;
+  color: #000;
   padding: 3px 12px;
   font-size: 11px;
   font-weight: 700;
